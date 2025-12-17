@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Ladders Global | Engineering & Creative Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azure: #0078d4;
+            --emerald: #27ae60;
+            --royal: #8e44ad;
+            --bg: #050505;
+            --card: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: #fff;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo { font-weight: 800; font-size: 1.5rem; letter-spacing: 2px; color: var(--azure); }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #111 0%, #050505 100%);
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: 4.5rem; margin: 0; background: linear-gradient(to right, #fff, var(--azure)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        header p { font-size: 1.2rem; color: #888; max-width: 700px; margin-top: 20px; }
+
+        /* Sections */
+        .section { padding: 100px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 60px; font-size: 2.5rem; }
+
+        /* Grid Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 40px;
+            border-radius: 20px;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover { border-color: var(--azure); transform: translateY(-10px); background: rgba(255,255,255,0.08); }
+        .card i { font-size: 2.5rem; margin-bottom: 20px; color: var(--azure); }
+
+        /* Capability List */
+        .tech-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .tech-tag { background: rgba(0, 120, 212, 0.2); padding: 5px 12px; border-radius: 5px; font-size: 0.8rem; color: var(--azure); border: 1px solid var(--azure); }
+
+        /* Case Study Section */
+        .case-study { border-left: 3px solid var(--azure); padding-left: 25px; margin-bottom: 40px; }
+        .case-study h4 { color: var(--azure); margin: 0; font-size: 1.4rem; }
+
+        /* CTA Button */
+        .btn {
+            padding: 15px 40px;
+            background: var(--azure);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+        .btn:hover { box-shadow: 0 0 20px rgba(0, 120, 212, 0.5); }
+
+        footer { text-align: center; padding: 50px; border-top: 1px solid var(--border); color: #555; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">DREAM LADDERS GLOBAL</div>
+            <div class="contact-info" style="font-size: 0.9rem;">
+                <i class="fab fa-whatsapp"></i> +91 70932 18648
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>DESIGN MEETS DESTINY</h1>
+        <p>A Multinational Hub for Azure Cloud Infrastructure, Structural Civil Engineering, and High-Fidelity Music Production.</p>
+        <a href="#contact" class="btn">Global Consultation</a>
+    </header>
+
+    <section class="section" id="services">
+        <h2 class="section-title">Multinational Capabilities</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-server"></i>
+                <h3>Azure DevOps</h3>
+                <p>Enterprise cloud automation and CI/CD orchestration for global scale.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Terraform</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-city"></i>
+                <h3>Civil Engineering</h3>
+                <p>Sustainable structural design and Vastu-compliant architectural planning.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">AutoCAD</span>
+                    <span class="tech-tag">3D BIM</span>
+                    <span class="tech-tag">V-Ray</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-waveform"></i>
+                <h3>Sonic Branding</h3>
+                <p>Professional music production and sound engineering for brands worldwide.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Logic Pro</span>
+                    <span class="tech-tag">Mastering</span>
+                    <span class="tech-tag">Mixing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #080808;">
+        <h2 class="section-title">Global Impact</h2>
+        <div class="case-study">
+            <h4>Digital: FinTech Cloud Overhaul</h4>
+            <p>London, UK: Reduced deployment overhead by 40% using automated Azure Bicep templates.</p>
+        </div>
+        <div class="case-study">
+            <h4>Physical: The Eco-Sync Complex</h4>
+            <p>Hyderabad, India: Delivered a 100% Vastu-compliant, solar-integrated residential masterplan.</p>
+        </div>
+        <div class="case-study" style="border-color: var(--royal);">
+            <h4>Auditory: Aura AI Sonic Identity</h4>
+            <p>San Francisco, USA: Developed a custom soundscape increasing app user retention by 22%.</p>
+        </div>
+    </section>
+
+    <section class="section" id="contact" style="text-align: center;">
+        <h2 class="section-title">Build the Extraordinary</h2>
+        <p style="max-width: 800px; margin: 0 auto 40px; color: #aaa;">
+            I’m always looking for passionate individuals to collaborate with on exciting projects that merge tech, design, and creativity. Let’s connect and explore the endless potential in working together.
+        </p>
+        <div style="font-size: 1.2rem; margin-bottom: 20px;">
+            <p><i class="fas fa-envelope"></i> shambudurajesh05@gmail.com</p>
+            <p><i class="fab fa-whatsapp"></i> +91 70932 18648</p>
+        </div>
+        <a href="https://wa.me/917093218648?text=Hi%20Rajesh,%20I'm%20interested%20in%20collaborating%20with%20Dream%20Ladders%20Global." class="btn">Partner With Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dream Ladders Global. Managed by Rajesh Shambudu.</p>
+        <p style="font-size: 0.7rem;">India | Remote Global Operations</p>
+    </footer>
+
+</body>
+</html>
