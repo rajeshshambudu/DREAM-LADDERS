@@ -1,0 +1,15 @@
+/* Removes default link styling inside the card */
+.card-wrapper-link {
+    text-decoration: none;
+    color: inherit; /* Keeps your original text color */
+    display: block; /* Makes the link fill the whole card */
+    height: 100%;
+}
+
+/* Visual feedback when hovering */
+.card:has(.card-wrapper-link):hover {
+    cursor: pointer;
+    background-color: #f9f9f9; /* Optional: light highlight */
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
